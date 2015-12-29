@@ -4,7 +4,7 @@ git clone git@github.com:jmctee/ProjectStarter.git
 mv ProjectStarter $1
 cd $1
 
-rm -Rf .git TODO
+rm -Rf .git TODO README.asciidoc bootstrap.sh
 
 git init
 git add .gitignore build.gradle src
