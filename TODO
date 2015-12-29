@@ -3,3 +3,5 @@ Add example of property variable substitution (templating)
 Add example of https rest usage, both ignoring and using certs
 Add example of JCommander command line args
 Add example of using digital ocean API to spin up node
+Add example of XML parsing (Java and Groovy)
+Add example of JSON parsing (Java and Groovy)

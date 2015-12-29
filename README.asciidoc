@@ -1,0 +1,38 @@
+Project Starter
+---------------
+
+The purpose of this project is to support quick creation of new Java/Groovy project that imports some common, useful libraries and provides simple examples of their use.
+
+Unlike most github projects, rather than forking ProjectStarter, you clone, then remove links to the original project and start over with a fresh project. This process is contained in the bootstrap script included with this project.
+
+Bootstrap Process
+-----------------
+
+To manually bootstrap a project:
+
+```
+export PROJECT_NAME=<your project name>
+
+git clone git@github.com:jmctee/ProjectStarter.git
+mv ProjectStarter $PROJECT_NAME
+cd $PROJECT_NAME
+
+rm -Rf .git TODO
+
+git init
+git add .gitignore build.gradle src
+git commit -am "${PROJECT_NAME}: bootstrapped from https://github.com/jmctee/ProjectStarter"
+git status
+git log
+
+gradle cleanIdea
+gradle idea
+gradle build
+```
+
+Project now ready for use, open in IntelliJ Idea and got to town!
+
+TODOs
+-----
+
+I will be adding more functionality over time. If you have any cool ideas to include, please feel free to send me a pull request.
